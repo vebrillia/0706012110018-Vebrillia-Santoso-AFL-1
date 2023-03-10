@@ -92,8 +92,8 @@ func shopping(){
               
               Press [B] to go back
               Press [P] to pay / checkout
-              Your choise?
-              """)
+              Your choice?
+              """, terminator: " ")
         
         userInput = readLine()!.lowercased()
         
@@ -117,25 +117,30 @@ func checkout(){
           Enter the amount of your money :
           """, terminator: " ")
         
-        guard let input = readLine(),
-              let amount = Int(input) else {
-            print("Please enter a valid amount.")
+        let input = readLine()
+        if let amount = Int(input!) {
+            if amount == 0{
+                print("Payment can't be zero.")
+                continue
+            } else if amount < 0{
+                print("Please enter a valid amount.")
+                continue
+            } else if amount < cartTotal{
+                print("Please enter a valid amount.")
+                continue
+            }
+            payment = (Int(amount))
+        } else {
+            if input == ""{
+                print("Please enter your payment.")
+            } else {
+                print("Please enter a valid amount.")
+            }
+            
             continue
-        }
-        if amount == 0{
-            print("Payment can't be zero.")
-            continue
-        } else if amount < 0{
-            print("Please enter a valid amount.")
-            continue
-        } else if amount < cartTotal{
-            print("Please enter a valid amount.")
-            continue
-        } else if amount == nil{
-            print("Please enter your payment.")
         }
         
-        payment = (Int(amount))
+        
         isPaymentValid = true
         
         let change = payment - cartTotal
