@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048C9AC329DDC64600FBD0DF /* Cafeteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C9AC229DDC64600FBD0DF /* Cafeteria.swift */; };
+		048C9AC529DDC65900FBD0DF /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C9AC429DDC65900FBD0DF /* Menu.swift */; };
+		048C9AC729DDC67400FBD0DF /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C9AC629DDC67400FBD0DF /* ShoppingCart.swift */; };
+		048C9ACB29DDCAD700FBD0DF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C9ACA29DDCAD700FBD0DF /* Item.swift */; };
 		04A920C729AD9E8500763566 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A920C629AD9E8500763566 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		048C9AC229DDC64600FBD0DF /* Cafeteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafeteria.swift; sourceTree = "<group>"; };
+		048C9AC429DDC65900FBD0DF /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		048C9AC629DDC67400FBD0DF /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		048C9ACA29DDCAD700FBD0DF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		04A920C329AD9E8500763566 /* 0706012110018-Vebrillia Santoso-AFL 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "0706012110018-Vebrillia Santoso-AFL 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A920C629AD9E8500763566 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				04A920C629AD9E8500763566 /* main.swift */,
+				048C9AC429DDC65900FBD0DF /* Menu.swift */,
+				048C9AC229DDC64600FBD0DF /* Cafeteria.swift */,
+				048C9AC629DDC67400FBD0DF /* ShoppingCart.swift */,
+				048C9ACA29DDCAD700FBD0DF /* Item.swift */,
 			);
 			path = "0706012110018-Vebrillia Santoso-AFL 1";
 			sourceTree = "<group>";
@@ -120,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048C9ACB29DDCAD700FBD0DF /* Item.swift in Sources */,
+				048C9AC529DDC65900FBD0DF /* Menu.swift in Sources */,
+				048C9AC329DDC64600FBD0DF /* Cafeteria.swift in Sources */,
 				04A920C729AD9E8500763566 /* main.swift in Sources */,
+				048C9AC729DDC67400FBD0DF /* ShoppingCart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
